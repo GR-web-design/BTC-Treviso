@@ -2,29 +2,40 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>index</title>
   <style>
     body {
       background-color: black;
       display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-      min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
-      margin: 0; /* Remove default body margin */
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px; /* Add some padding for better mobile viewing */
+      box-sizing: border-box; /* Include padding in element's total width and height */
+      text-align: center; /* Center text content */
     }
-    .container {
-      text-align: center; /* Center the heading */
+    h1 {
+      color: white;
+      margin-bottom: 20px; /* Add some space between heading and image */
     }
     img {
-      display: block; /* Remove extra space below the image */
-      margin: 20px auto 0; /* Add some top margin and center horizontally */
+      max-width: 90%; /* Ensure the image doesn't overflow on smaller screens */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Optional: Adjust font size for better readability on smaller screens */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 style="color: white;">BTC-TREVISO</h1>
-    <img src="index_files/btc-logo.png" alt="" title="btc" style="width: 161px; height: 161px;">
-  </div>
+  <h1>BTC-TREVISO</h1>
+  <img src="index_files/btc-logo.png" alt="" title="btc">
 </body>
 </html>
