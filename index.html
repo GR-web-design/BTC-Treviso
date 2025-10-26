@@ -21,9 +21,14 @@
       color: white;
       margin-bottom: 20px; /* Add some space between heading and image */
     }
+
+    /* Make the image occupy half of the viewport width (metà del viewport) */
     img {
-      max-width: 90%; /* Ensure the image doesn't overflow on smaller screens */
-      height: auto; /* Maintain aspect ratio */
+      width: 50vw;      /* Image will be 50% of the viewport width */
+      max-width: 90%;   /* Fallback to avoid overflow on extremely small screens */
+      max-height: 50vh; /* Prevent image from exceeding half the viewport height */
+      height: auto;     /* Maintain aspect ratio */
+      display: block;
     }
 
     /* Enter button styles */
