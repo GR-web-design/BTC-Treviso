@@ -26,16 +26,42 @@
       height: auto; /* Maintain aspect ratio */
     }
 
+    /* Enter button styles */
+    .enter-button {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 12px 28px;
+      background-color: #1a73e8;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 0;
+      cursor: pointer;
+      transition: background-color 0.15s ease;
+    }
+    .enter-button:hover,
+    .enter-button:focus {
+      background-color: #155ab6;
+      outline: none;
+    }
+
     /* Optional: Adjust font size for better readability on smaller screens */
     @media (max-width: 600px) {
       h1 {
         font-size: 1.5em;
+      }
+      .enter-button {
+        padding: 10px 20px;
       }
     }
   </style>
 </head>
 <body>
   <h1>BTC-TREVISO</h1>
-  <img src="index_files/btc-logo.png" alt="" title="btc">
+  <img src="index_files/btc-logo.png" alt="BTC Treviso logo" title="btc">
+
+  <!-- Enter button: change href to the page you want to link to -->
+  <a href="home.html" class="enter-button" role="button" aria-label="Enter site">Enter</a>
 </body>
 </html>
